@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/searchWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/search"
+        android:drawableLeft="@drawable/search"
+        android:hint="Search" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Search" />
+
+    <ListView
+        android:id="@+id/setDefination"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search" />
+
+    <!--<fragment-->
+    <!--android:id="@+id/fragment"-->
+    <!--android:name="com.example.archi.merriamwebsterdictionary.DefinationText
+    <!-android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/searchWord"-->
+    <!--android:layout_alignParentStart="true" />-->
+
+</RelativeLayout>
